@@ -9,20 +9,21 @@
     <body>
 
         <div class="f1">
-            <h1>LOGOWANIE</h1>
+            <h1>REJESTRACJA</h1>
+
             <form method="POST">
             login <input type="text" name="login"><br>
-            haslo <input type="text" name="password"><br>
-            <input type="submit" name="submit"><br>
-            <b><p><a href="rejestracja.php">REJESTRACJA</a></p><b>
-            </form>
+            haslo <input type="text" name="haslo"><br>
+            e-mail <input type="text" name="e-mail"><br>
+            <input type="submit" name="submit">
+            
 
         </div>
          <?php
             
             $con = new mysqli("127.0.0.1","root","pass","ZSPSHOP");
             print_r($_POST);
-            $sql = "SELECT * FROM users WHERE login='".$_POST['login']."'";
+            $sql="INSERT INTO users ('login','haslo','e-mail') VALUES ("login","haslo" ) "
             // $res = $con->query($sql);
             // $offers = $res->fetch_array(MYSQLI_ASOC);
             // $res->fetch_all();
