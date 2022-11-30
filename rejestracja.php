@@ -13,7 +13,7 @@
 
             <form method="POST">
             login <input type="text" name="login"><br>
-            haslo <input type="text" name="haslo"><br>
+            haslo <input type="password" name="haslo"><br>
             e-mail <input type="text" name="e-mail"><br>
             <input type="submit" name="submit">
             
@@ -21,10 +21,10 @@
         </div>
          <?php
             
-            $con = new mysqli("127.0.0.1","root","pass","ZSPSHOP");
+            $con = new mysqli("127.0.0.1","root","","ZSPSHOP");
             print_r($_POST);
-            $sql="INSERT INTO users ('login','haslo','e-mail') VALUES ("login","haslo" ) "
-            // $res = $con->query($sql);
+            $sql="INSERT INTO users (`login`,`password`,`e-mail`) VALUES ('".$_POST['login']."','".$_POST['haslo']."','".$_POST['e-mail']."' ) ";
+            $res = $con->query($sql);
             // $offers = $res->fetch_array(MYSQLI_ASOC);
             // $res->fetch_all();
 

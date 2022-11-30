@@ -12,3 +12,8 @@ a{
 a:hover{
     text-decoration: none;
 }
+.sg1{
+    background-color:rgb(31, 153, 209);
+    width: 100%;
+    height: 100%;
+}
