@@ -16,6 +16,7 @@
             haslo <input type="password" name="haslo"><br>
             e-mail <input type="text" name="e-mail"><br>
             <input type="submit" name="submit">
+            <a href="index.php"><input type="button" name="submit" value="Logowanie"></a>
             
 
         </div>
