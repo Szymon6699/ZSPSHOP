@@ -32,8 +32,8 @@
            
                 <h1>Wystaw Oferte</h1>
                 <form method="POST">
-                    Nazwa<input type="text" name="nazwao"><br>
-                    Opis<input type="text" name="opiso">
+                    Nazwa <input type="text" name="nazwao"><br>
+                    Opis <input type="text" name="opiso"><br>
                     <input type="submit" name="submito">
                 </form>
 

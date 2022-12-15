@@ -19,3 +19,14 @@ a:hover{
     text-align: center;
     font-size: 20px;
 }
+.o1{
+    height: 100px;
+    width: 300px;
+    background-color: rgb(95, 114, 199);
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-right: auto;
+    border-radius: 30px;
+    
+    
+}
